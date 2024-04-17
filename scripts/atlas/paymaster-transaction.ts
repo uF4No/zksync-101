@@ -1,5 +1,7 @@
 import { AtlasEnvironment } from "atlas-ide";
 import TokenArtifact from "../artifacts/TestToken";
+import ZeekMessagesArtifact from "../artifacts/TestToken";
+
 import * as ethers from "ethers";
 import {utils} from 'zksync-web3'
 
@@ -16,7 +18,7 @@ export async function main (atlas: AtlasEnvironment) {
   const wallet = provider.getSigner();
 
   // initialise messages and token contracts with address, abi and signer
-  const messagesContract= new ethers.Contract(ZEEK_MESSAGES_CONTRACT_ADDRESS, TokenArtifact.ZeekSecretMessages.abi, wallet);
+  const messagesContract= new ethers.Contract(ZEEK_MESSAGES_CONTRACT_ADDRESS, ZeekMessagesArtifact.ZeekSecretMessages.abi, wallet);
   const tokenContract= new ethers.Contract(TOKEN_CONTRACT_ADDRESS, TokenArtifact.TestToken.abi, wallet);
 
   console.log(`Account ${wallet.address} has ${await tokenContract.balanceOf(wallet.address)} tokens`);
