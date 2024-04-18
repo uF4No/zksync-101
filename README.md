@@ -13,6 +13,16 @@ And the following scripts:
 
 You can deploy these contracts and run the provided scripts using Atlas or Remix:
 
-[Open this project in Atlas](https://app.atlaszk.com/projects?template=https://github.com/uF4No/zksync-101&open=/contracts/ZeekSecretMessages.sol&chainId=300)
+### Atlas
 
-[Open this project in Remix](https://remix.ethereum.org/#url=https://github.com/uF4No/zksync-101/blob/master/contracts/ZeekSecretMessages.sol)
+- [Open `ZeekSecretMessages.sol` in Atlas](https://app.atlaszk.com/projects?template=https://github.com/uF4No/zksync-101&open=/atlas/contracts/ZeekSecretMessages.sol&chainId=300)
+- [Open `TestToken.sol` in Atlas](https://app.atlaszk.com/projects?template=https://github.com/uF4No/zksync-101&open=/atlas/contracts/TestToken.sol&chainId=300)
+- [Open `mint-token.ts` in Atlas](https://app.atlaszk.com/projects?template=https://github.com/uF4No/zksync-101&open=/atlas/scripts/mint-token.ts&chainId=300)
+- [Open `paymaster-transaction.ts` in Atlas](https://app.atlaszk.com/projects?template=https://github.com/uF4No/zksync-101&open=/atlas/scripts/paymaster-transaction.ts&chainId=300)
+
+### Remix IDE
+
+- [Open `ZeekSecretMessages.sol` in Remix](https://remix.ethereum.org/#url=https://github.com/uF4No/zksync-101/blob/master/remix/contracts/ZeekSecretMessages.sol)
+- [Open `TestToken.sol` in Remix](https://remix.ethereum.org/#url=https://github.com/uF4No/zksync-101/blob/master/remix/contracts/TestToken.sol)
+- [Open `mint-token.ts` in Remix](https://remix.ethereum.org/#url=https://github.com/uF4No/zksync-101/blob/master/remix/scripts/mint-token.ts)
+- [Open `paymaster-transaction.ts` in Remix](https://remix.ethereum.org/#url=https://github.com/uF4No/zksync-101/blob/master/remix/scripts/paymaster-transaction.ts)
