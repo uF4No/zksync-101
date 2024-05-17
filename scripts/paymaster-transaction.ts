@@ -2,8 +2,8 @@ import {utils, Web3Provider, Provider} from 'zksync-web3'
 import * as ethers from "ethers";
 
 import { AtlasEnvironment } from "atlas-ide";
-import TokenArtifact from "../../artifacts/TestToken";
-import ZeekMessagesArtifact from "../../artifacts/ZeekSecretMessages";
+import TokenArtifact from "../artifacts/TestToken";
+import ZeekMessagesArtifact from "../artifacts/ZeekSecretMessages";
 
 // Address of the ZeekMessages contract
 const ZEEK_MESSAGES_CONTRACT_ADDRESS = "";
