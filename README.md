@@ -1,4 +1,4 @@
-# ZKsync 101 Atlas
+# zkSync quickstart Atlas
 
 This project contains the following smart contracts:
 
