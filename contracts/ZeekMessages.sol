@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ZeekSecretMessages {
+contract ZeekMessages {
     bytes32[] private messages;
 
     // Event to acknowledge a new message
@@ -24,5 +24,11 @@ contract ZeekSecretMessages {
     // Function to count the total messages sent to Zeek
     function getTotalMessages() public view returns (uint) {
         return messages.length;
+    }
+
+    // Function to return the last message sent to Zeek
+    function getLastMessage() public view returns (string memory) {
+        require(messages.length > 0, "No messages sent to Zeek yet!");
+        return messages[messages.length - 1];
     }
 }
