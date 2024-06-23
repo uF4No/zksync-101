@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract ZeekMessages {
-    bytes32[] private messages;
+    string[] private messages;
 
     // Event to acknowledge a new message
     event MessageReceived(string);
@@ -12,10 +12,8 @@ contract ZeekMessages {
         emit MessageReceived("Zeek welcomes you to zkSync!");
     }
 
-    // Function to send a "secret" message to Zeek
     function sendMessage(string memory _message) public {
-        bytes32 hashedMessage = keccak256(abi.encodePacked(_message));
-        messages.push(hashedMessage);
+        messages.push(_message);
 
         // Acknowledge the message receipt with Zeek's reply
         emit MessageReceived("ZK is the endgame - Message received!");
